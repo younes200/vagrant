@@ -8,6 +8,7 @@ Other recipies included:
 * vim
 * git
 * apt
+* cloud9
 * redis
 * mongodb
 * imagemagick
