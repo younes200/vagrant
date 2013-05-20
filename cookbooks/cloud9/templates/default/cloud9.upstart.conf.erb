@@ -1,0 +1,10 @@
+description "Cloud9 Editor"
+
+start on startup
+stop on shutdown
+
+stop on runlevel [!2345]
+
+respawn
+
+exec sudo /home/vagrant/cloud9/bin/cloud9.sh -w <%= node[:cloud9][:workspace] %> -l 0.0.0.0 -p <%= node[:cloud9][:port] %>

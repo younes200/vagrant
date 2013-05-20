@@ -13,3 +13,12 @@
 [submodule "cookbooks/nodejs"]
 	path = cookbooks/nodejs
 	url = git://github.com/mdxp/nodejs-cookbook.git
+[submodule "cookbooks/redis"]
+	path = cookbooks/redis
+	url = https://github.com/numan/redis-cookbook.git
+[submodule "cookbooks/mongodb"]
+	path = cookbooks/mongodb
+	url = https://github.com/edelight/chef-mongodb.git
+[submodule "cookbooks/imagemagick"]
+	path = cookbooks/imagemagick
+	url = https://github.com/opscode-cookbooks/imagemagick.git

@@ -1,0 +1,10 @@
+maintainer       "Interactive Object"
+maintainer_email "younes@interactive-object.com"
+license          "Apache 2.0"
+description      "Installs/Configures cloud9 IDE"
+long_description IO.read(File.join(File.dirname(__FILE__), 'README.rdoc'))
+version          "0.1.0"
+recipe           "cloud9", "Installs Cloud9 from source"
+depends          "build-essential"
+depends          "git"
+depends          "nodejs"

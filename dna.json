@@ -1,0 +1,28 @@
+{
+  "nodejs": {
+    "version": "0.10.4",
+    "npm": "1.1.65"
+  },
+  "redis":{
+    "version":"2.6.10"
+  },
+  "node_modules":[
+    "mongodb",
+    "forever",
+    "sm"
+  ], 
+  "networking": {
+    "packages": ["curl", "wget","rsync"]
+  },
+  "mongodb": {
+    "apt_repo": "ubuntu-upstart"
+  },
+  "run_list": [ 
+   "recipe[apt]",
+   "recipe[nodejs]", 
+   "recipe[redis]", 
+   "recipe[git]",
+   "recipe[cloud9]",
+   "recipe[imagemagick::devel]"
+ ]
+}
