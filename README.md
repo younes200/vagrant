@@ -8,12 +8,15 @@ Other recipies included:
 * vim
 * git
 * apt
+* redis
+* mongodb
+* imagemagick
 
 Usage
 ======
 
 Clone it and launch Vagrant:
 
-    git clone --recursive git://github.com/bitlyfied/vagrant-chef-nodejs-startup.git my-project
+    git clone --recursive git://github.com/thelaughingman/vagrant.git my-project
     cd my-project
     vagrant up
