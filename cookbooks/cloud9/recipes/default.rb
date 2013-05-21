@@ -17,16 +17,18 @@ git node[:cloud9][:dir] do
     repository node[:cloud9][:git]
     reference "master"
     action :checkout
-    user "root"
+    user "vagrant"
+	group "vagrant"
 end
 
 
 
-execute "cloud9-install" do
-  cwd node[:cloud9][:dir]
-  user 'vagrant'
-  command "npm install"
-end
+#execute "cloud9-install" do
+#  cwd node[:cloud9][:dir]
+#  user 'vagrant'
+#  command "su vagrant -l -c 'bash -i /usr/local/bin/npm install'"
+#  action :run
+#end
 
 
 service "cloud9" do

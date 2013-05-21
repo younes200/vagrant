@@ -1,7 +1,7 @@
 {
   "nodejs": {
     "version": "0.10.4",
-    "npm": "1.1.65"
+    "npm": "1.2.21"
   },
   "redis":{
     "version":"2.6.10"
@@ -14,15 +14,17 @@
   "networking": {
     "packages": ["curl", "wget","rsync"]
   },
-  "mongodb": {
-    "apt_repo": "ubuntu-upstart"
-  },
+  
   "run_list": [ 
+   "recipe[build-essential]",
+   "recipe[git]",
    "recipe[apt]",
    "recipe[nodejs]", 
    "recipe[redis]", 
-   "recipe[git]",
+   "recipe[vim]", 
+   "recipe[imagemagick::devel]",
    "recipe[cloud9]",
-   "recipe[imagemagick::devel]"
+   "recipe[mongodb::10gen_repo]",
+   "recipe[mongodb::default]"
  ]
 }

@@ -18,7 +18,7 @@
 	url = https://github.com/numan/redis-cookbook.git
 [submodule "cookbooks/mongodb"]
 	path = cookbooks/mongodb
-	url = https://github.com/edelight/chef-mongodb.git
+	url = git@github.com:edelight/chef-mongodb.git
 [submodule "cookbooks/imagemagick"]
 	path = cookbooks/imagemagick
 	url = https://github.com/opscode-cookbooks/imagemagick.git
