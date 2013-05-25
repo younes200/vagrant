@@ -12,6 +12,9 @@ package "libxml2-dev" do
   action :install
 end
 
+package "nodejs-dev" do
+  action :install
+end
 
 git node[:cloud9][:dir] do
     repository node[:cloud9][:git]

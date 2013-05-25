@@ -18,15 +18,17 @@ Vagrant::Config.run do |config|
     
 		nodejs_config.vm.provision :chef_solo do |chef|
 			chef.cookbooks_path = "cookbooks"
-      chef.log_level = :debug
-chef.add_recipe "build-essential"
-                        chef.add_recipe "git"
-                        chef.add_recipe "apt"
-                        chef.add_recipe "nodejs"
-                        chef.add_recipe "vim"
-      chef.add_recipe "imagemagick"
-      chef.add_recipe "cloud9"
-      chef.add_recipe "redis"
+      			chef.log_level = :debug
+			      chef.add_recipe "build-essential"
+            chef.add_recipe "git"
+            chef.add_recipe "apt"
+            chef.add_recipe "nodejs"
+            chef.add_recipe "vim"
+      			chef.add_recipe "imagemagick"
+      			chef.add_recipe "cloud9"
+      			chef.add_recipe "redis"
+			chef.add_recipe "mongodb::10gen_repo"
+			chef.add_recipe "mongodb::default"
       chef.json.merge!(JSON.parse(File.read('dna.json')))
 		end
 	end
