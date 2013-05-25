@@ -1,7 +1,7 @@
 {
   "nodejs": {
     "version": "0.10.4",
-    "npm": "1.2.21"
+    "npm": "1.2.23"
   },
   "redis":{
     "version":"2.6.10"
